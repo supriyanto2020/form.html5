@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+	    <html lang="in">
+	        <head>
+	            <meta name="supriyanto" description="formcss"/>
+	            <meta charset="UTF-8"/>
+	
+
+	            <style>
+	                body {font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;}
+	
+
+	                input[type=text], input[type=email], input[type=number], input[type=date], select,
+	                textarea
+	                {
+	                    width: 100%;
+	                    margin: 10px 0;
+	                    padding: 10px 20px;
+	                    display: inline-block;
+	                    border: 2px solid #000;
+	                    border-radius: 5px;
+	                    box-sizing:border-box;
+	                }
+	
+
+	                input[type=SUBMIT]
+	                {
+	                    width: 100%;
+	                    background-color: #048720;
+	                    color: rgb(12, 12, 9);
+	                    padding: 20px 25px;
+	                    margin: 10px 0;
+	                    border: none;
+	                    border-radius: 5px;
+	                    cursor: pointer;
+	                }
+	
+
+	                input[type=submit]:hover
+	                {
+	                    background-color: #96bd0b;
+	                }
+	
+
+	                input[type=radio]
+	                {
+	                    padding: 14px 21px;
+	                    margin: 15px
+	                }              
+	
+
+	                .container
+	                {
+	                    border-radius: 6px;
+	                    background-color: #45798f;
+	                    padding: 53px;
+	                    width: 50%;
+	                    margin: auto;
+	                }
+	
+
+	                h1,h2
+	                {
+	                    text-align: center;
+	                }
+	
+
+	                label
+	                {
+	                    font-weight:bold;
+	                    font-size: 15px;
+	                }
+	
+	
+
+	            </style>
+	        </head>
+	        <body>
+	            <div class="container">
+	                <h1>Formulir Pendaftaran Siswa Baru</h1>
+	                <br/><br/>
+	                <hr/>
+	                <h2>DATA PRIBADI</h2>
+	                <hr/>
+	                <br/>
+	                <form action="/action.php">
+	                    <!-- Ini adalah form Nama Lengkap -->
+	                    <label>Nama Lengkap</label>
+	                    <input type="text" placeholder="" name="namalengkap">
+	
+
+	                    <!-- Ini adalah form Tempat Lahir -->
+	                    <label>Tempat Lahir</label>
+	                    <input type="text" placeholder="" name="tempatlahir">
+	
+
+	                    <!-- Ini adalah form Tanggal Lahir -->
+	                    <label>Tanggal Lahir</label>
+	                    <input type="date" name="tanggallahir">
+	
+
+	                    <!-- Ini adalah form Umur -->
+	                    <label>Umur</label>
+	                    <input type="number" placeholder="" name="Umur">
+	
+
+	                    <!-- Ini adalah form Jenis Kelamin -->
+	                    <label>Jenis Kelamin</label> 
+	                    <br/><br/>
+	                    <input type="radio" name="jeniskelamin" value="laki-laki">
+	                    <label for="laki-laki">Laki-Laki</label>
+	
+
+	                    <input type="radio" name="jeniskelamin" value="perempuan">
+	                    <label for="perempuan">Perempuan</label>
+	                    <br/><br/><br/><br/>
+	                    <hr/>
+	
+
+	                    <!-- --------------- -->
+	                    <!-- Informasi Kontak -->
+	
+
+	                    <h2>Informasi Kontak</h2>
+	                    <hr/>
+	                    <br/>
+	
+
+	                    <!-- Ini adalah form No. HP -->
+	                    <label>No. Handphone</label>
+	                    <input type="number" name="nomorhp" placeholder="">
+	
+
+	                    <!-- Ini adalah form No. Telpon -->
+	                    <label>No. Telpon (Opsional)</label>
+	                    <input type="number" name="nomortelpon" placeholder="">
+	
+
+	                    <!-- Ini adalah form Alamat Rumah -->
+	                    <label>Alamat Rumah</label>
+	                    <textarea name="alamatrumah" cols="55" rows="6"></textarea>
+	
+
+	                    <!-- Ini adalah form Alamat Orang Tua -->
+	                    <label>Alamat Orang Tua</label>
+	                    <textarea name="alamatorangtua" cols="50" rows="6"></textarea>
+	
+
+	                    <!-- Ini adalah form Alamat Email -->
+	                    <label>Alamat Email</label>
+	                    <input type="email" placeholder="" name="email">
+	                    <br/><br/><br/><br/>
+	
+
+	                    <!-- --------------- -->
+	                    <!-- Asal Sekolah SMA/SMK/Paket C -->
+	
+
+	                    <hr/>
+	                    <h2>Asal Sekolah SMA/SMK/MA/Paket C</h2>
+	                    <hr/>
+	
+
+	                    <!-- Ini adalah form Asal Kampus -->
+	                    <label>Asal Sekolah</label>
+	                    <input type="text" placeholder="">
+	
+
+	                    <!-- Ini adalah form Tahun Angkatan -->
+	                    <label>Tahun Angkatan</label>
+	                    <select name="tahun">
+                            <option value="2021/2022">2021/2022</option>
+	                        <option value="2020/2021">2020/2021</option>
+	                        <option value="2019/2020">2019/2020</option>
+	                    </select>
+	
+
+	                    <!-- Ini adalah form Jurusan -->
+	                    <label>Jurusan</label>
+	                    <br/>
+	                    <!-- Ini adalah form TKJ -->
+	                    <input type="radio" name="Jurusan" value="TKJ">
+	                    <label for="TKJ" id="TI">TKJ</label>
+	
+
+	                    <!-- Ini adalah form RPL -->
+	                    <input type="radio" name="Jurusan" value="RPL">
+                        <label for="RPL" id="TI">RPL</label>
+                        
+                        <!-- Ini adalah form IPA -->
+	                    <input type="radio" name="Jurusan" value="IPA">
+                        <label for="IPA" id="IPA">IPA</label>
+                        
+                        <!-- Ini adalah form IPA -->
+	                    <input type="radio" name="Jurusan" value="IPS">
+	                    <label for="IPS" id="IPS">IPS</label>
+	                    
+	                    <input type="submit" value="KIRIM"> 
+	                </form>
+	            </div>
+	        </body>
+	    </html>
